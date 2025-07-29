@@ -11,7 +11,7 @@ variable "instance_type" {
   description = "The EC2 instance type for the instance, provided via tfvars."
   type        = map(string)
   default = {
-    "dev" = "valt2.micro"
+    "dev" = "t2.micro"
     "prod" = "t2.micro"
     #didnt add stage here cause under the module block i added a default instance type
   }
