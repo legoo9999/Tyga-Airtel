@@ -13,6 +13,7 @@ variable "instance_type" {
   default = {
     "dev" = "valt2.micro"
     "prod" = "t2.micro"
+    #didnt add stage here cause under the module block i added a default instance type
   }
 }
 
