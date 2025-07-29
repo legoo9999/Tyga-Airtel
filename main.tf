@@ -6,12 +6,12 @@ variable "ami" {
     description = "value"  
 }
 
-variable "aws_instance" {
+variable "instance_type" {
   description = "value"
 }
 
 module "ec2_instance" {
    source = "./modules/ec2_instance"
    ami = var.ami
-   instance_type = "var.instance_type"
+   instance_type = var.instance_type
 }
